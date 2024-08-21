@@ -8,12 +8,18 @@ const Header = (props) => {
 const Content = (props) => {
   return (
     <>
-      <p>
-        {props.part}:{props.exercise}
-      </p>
+      <Part nimi={props.part} task={props.exercise} />
     </>
   );
 };
+const Part = (props) => {
+  return (
+    <p>
+      {props.nimi}:{props.task}
+    </p>
+  );
+};
+
 const Total = (props) => {
   return (
     <p>
