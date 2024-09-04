@@ -1,3 +1,5 @@
+/* Todo: Content.jsx ska uppdateras så att de funkar fast en kurs sku tas bort*/
+
 import Course from "./Course";
 const App = () => {
   const course = {
