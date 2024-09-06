@@ -1,4 +1,3 @@
-import Parts from "./Part";
 const Content = ({ parts }) => {
   return (
     <ul>

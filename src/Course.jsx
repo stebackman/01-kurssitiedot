@@ -5,9 +5,13 @@ import Total from "./Total";
 const Course = ({ course }) => {
   return (
     <>
-      <Header course={course.name} />
-      <Content parts={course.parts} />
-      <Total parts={course.parts} />
+      {course.map((courseItem, index) => (
+        <div key={index}>
+          <Header course={courseItem.name} />
+          <Content parts={courseItem.parts} />
+          <Total parts={courseItem.parts} />
+        </div>
+      ))}
     </>
   );
 };
